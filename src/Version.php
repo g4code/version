@@ -19,7 +19,7 @@ class Version
 
     public function __construct($path)
     {
-        $this->path = $path;
+        $this->path = realpath($path);
     }
 
     public function getVersionNumber()
